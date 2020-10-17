@@ -1,3 +1,21 @@
+### Title : - A NOVEL ARCHITECTURE FOR STREAMLINED NETWORK TRAFFIC PROCESSING
+
+## Supervisor : Supervisor
+Dr. Keshav Sood | Keshav.sood@deakin.edu.au 
+
+## Mentor
+Mohammad Nosouhi | m.nosouhi@deaki.edu.au
+
+## Team
+Rahul Ganji | rganji@deakin.edu.au
+Vishal Yadav Allegala | vallegala@deakin.edu.au 
+Sampath Kumar Gudipudi | sgudipudi@deakin.edu.au
+
+## Overview
+The whole idea behind the project is to design a novel architecture for streamlined network traffic processing. our project has three parts 
+i. designing network using cloud and egde technologies. 
+ii. collecting the sensor reading (which is one of our assumptions) and transfering them over cloud and edge and see latency difference.
+iii. Processing the data for anomaly detection and drawing patterns or for predictions. 
 
 ## Getting Started
 
@@ -5,7 +23,7 @@ Consider the mobile phones as sensors that sends constant readings to an edge de
 anomalies with the help of BIRCH algorithm. If the received reading is classified as an outlier than it is reported else it is sent to the server.
 
 
-### Network 
+## Network 
 
 Step by Step procedure: (Network)
 

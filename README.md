@@ -8,11 +8,6 @@ or in the cloud.
 Consider the mobile phones as sensors that sends constant readings to an edge device which runs the proposed BIRCH algorithm. At the edge, the data is checked for 
 anomalies with the help of BIRCH algorithm. If the received reading is classified as an outlier than it is reported else it is sent to the server.
 
-### Prerequisites
-
-For python:
-For network:
-
 
 ### Installing
 
@@ -20,15 +15,29 @@ Step by Step procedure: (Network)
 
 Say what the step will be
 
-```
-Give the example
-```
+Open source Tools:
 
-And repeat
+ZeroTier : https://my.zerotier.com/network/a0cbf4b62a9f362f
+Network ID: “a0cbf4b62a9f362f”
 
-```
-until finished
-```
+User Name : rahulg2526@gmail.com
+Password: Deakincyber123
+
+Can add upto 50 sensors, as soon as the new device is added to the network, they will be assigned to a virtual public IP. 
+
+PRTG Monitoring Tool:  https://www.paessler.com/prtg 
+PRTG server will run on local server http://127.0.0.0 on the local machine. 
+Latency is calculated with ICMP monitoring sensors. 
+
+External factors included in testing:
+
+Based on this connectivity we had tested cloud architecture environment by sending multiple signals and different size of data from remote location to cloud. ( Just to add latency to any cloud server will never be constant it varies based on already existing traffic on ISP lines ), to make sure latency reports are legitimate readings are monitored in 1 minute interval with the help of open source monitoring tool PRTG, Where dark blue line in the reports indicates the average of all latency over one minute interval, where pink line indicates maximum latency obtained in that particular and  light blue line indicates minimum latency obtained in that one minute interval. 
+Above all as it’s a real time testing what all external factors influence testing. 
+1.	Latency is inversely proportional to bandwidth used in the line, i.e. if the bandwidth of the line is used to maximum extent the latency is more. If the bandwidth of the line used more than the actual capacity the latency will be higher than expected and can observe packet loss. 
+
+2.	Size of the data is directly proportional to bandwidth used in the line. i.e. if the size of the packet is more such as transferring or receiving huge files the utility of bandwidth is high, which impacts the latency. 
+
+3.	Routing issues in the transmission path, instead of packet travelling from source to destination in a greater number of hops than expected, the latency will be higher.
 
 End with an example of getting some data out of the system or using it for a little demo
 
@@ -41,33 +50,4 @@ Check the latency time difference between the cloud network and edge network. Th
 
 Add additional notes about how to deploy this on a live system
 
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 

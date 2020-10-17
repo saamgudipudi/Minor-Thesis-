@@ -1,7 +1,3 @@
-# Outliers detection in IoT network and sensor data
-
-A network has been proposed to send sensor readings over to the server, before sending the data to the server end, the data is checked for anomalies at the edge 
-or in the cloud.
 
 ## Getting Started
 
@@ -9,7 +5,7 @@ Consider the mobile phones as sensors that sends constant readings to an edge de
 anomalies with the help of BIRCH algorithm. If the received reading is classified as an outlier than it is reported else it is sent to the server.
 
 
-### Installing
+### Network 
 
 Step by Step procedure: (Network)
 
@@ -45,6 +41,13 @@ End with an example of getting some data out of the system or using it for a lit
 
 Check the latency time difference between the cloud network and edge network. The lower the latency time, the better the performance of network.
 
+## Code.
+We have used weather data set as our data set as we dont have enough time to deploy real sensors and get readings from that. we have also added delay in the program inorder to make it realtime. The delay added was only one second because we have many data rows and if delay is more it take so much time. 
+
+## Outliers detection in IoT network and sensor data
+
+A network has been proposed to send sensor readings over to the server, before sending the data to the server end, the data is checked for anomalies at the edge 
+or in the cloud.
 
 ## Deployment
 
